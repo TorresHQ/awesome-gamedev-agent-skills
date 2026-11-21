@@ -25,8 +25,8 @@ jobs:
   test:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-go@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@d8cbb8045d7f43706b9177cceb36c1f91a6644d5 # v7.1.0
         with:
           go-version-file: go.mod
       - name: Runtime libraries for the smoke run
@@ -49,7 +49,7 @@ jobs:
           ALSA_CONFIG_PATH="$RUNNER_TEMP/alsa-null.conf" timeout 60 xvfb-run -a -s "-screen 0 1280x720x24" \
             ./smoke -demo -shot shot.png -shot-tick 240
           test -s shot.png
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: smoke-frame
           path: shot.png
@@ -68,8 +68,8 @@ jobs:
     needs: test
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-go@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@d8cbb8045d7f43706b9177cceb36c1f91a6644d5 # v7.1.0
         with:
           go-version-file: go.mod
       - name: Build
@@ -108,7 +108,7 @@ jobs:
           (cd dist/linux && tar czf "../${GAME}_${V}_linux_amd64.tar.gz" .)
           (cd dist/mac && zip -r -y "../${GAME}_${V}_macos_unsigned.zip" "$GAME.app" licenses)
           (cd dist/web && zip -r "../${GAME}_${V}_web.zip" .)   # index.html at the top level, as itch.io expects
-      - uses: softprops/action-gh-release@v3
+      - uses: softprops/action-gh-release@8a0cd651e5b2365bd640854a3fa5dfc70e4875f3 # v3.0.4
         with:
           files: |
             dist/*.zip

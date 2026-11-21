@@ -22,7 +22,6 @@ npx skills add gamedev-skills/awesome-gamedev-agent-skills
 [![Skills](https://img.shields.io/badge/skills-79%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
-[![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
 needs them. This repo gives your agent **79 game-dev skills** and a **router** that picks the
@@ -39,35 +38,6 @@ task skills before it writes code.
   the 12 engines, and in 366 blind test prompts the right skill loaded for 98.7% of the requests
   that needed one. [Results, method and limits](evals/RESULTS.md) ·
   [version support](docs/VERSION-SUPPORT.md).
-
-## Sponsors
-
-<!-- Two sponsors per row. Banners are 960x480 PNGs in docs/assets/sponsors/. -->
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://www.infistar.cc/register?aff=59SNHZD6&amp;ref_source=link">
-        <img src="docs/assets/sponsors/infistar.png" width="380"
-             alt="Infistar: one API key for Claude, GPT, Gemini, Grok, DeepSeek and more">
-      </a>
-      <br>
-      <sub>Sponsored · <a href="https://www.infistar.cc/register?aff=59SNHZD6&amp;ref_source=link">Infistar</a></sub>
-    </td>
-    <td align="center" width="50%">
-      <a href="mailto:abhishekbarali6969@gmail.com?subject=Sponsoring%20awesome-gamedev-agent-skills">
-        <img src="docs/assets/sponsors/your-product-here.svg" width="380"
-             alt="Your product here: monthly sponsor slot">
-      </a>
-      <br>
-      <sub>Open slot · <a href="mailto:abhishekbarali6969@gmail.com?subject=Sponsoring%20awesome-gamedev-agent-skills">Become a sponsor</a></sub>
-    </td>
-  </tr>
-</table>
-
-Want to reach game developers who build with AI coding agents? Email
-[abhishekbarali6969@gmail.com](mailto:abhishekbarali6969@gmail.com?subject=Sponsoring%20awesome-gamedev-agent-skills).
-Sponsor slots are monthly. Sponsored entries are labelled as sponsored and have no effect on which
-skills the router picks.
 
 ## Contents
 
